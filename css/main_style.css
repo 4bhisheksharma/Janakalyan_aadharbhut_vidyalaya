@@ -514,7 +514,7 @@ h3{
     object-fit: cover;
   }
 
-/* Call To Action */
+/* Call To Action
 
 .ctn{
     margin: 100px auto;
@@ -541,7 +541,7 @@ h3{
     border-radius: 10px;
     padding: 100px 0;
     box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.664);
-}
+} */
 
 /* Footer */
 
@@ -654,7 +654,7 @@ h3{
   
     .footer-col {
       width: 50%;
-      margin-bottom: 1.875rem;
+      margin-bottom: 1.9rem;
     }
   }
   
@@ -670,7 +670,7 @@ h3{
   @media(max-width: 433px) {
  
     .creator {
-      font-size: 0.38.5rem;
+      font-size: 0.5rem;
     }
   }
 
