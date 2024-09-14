@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
     /* border: 1px solid yellow; */
 }
 
@@ -23,6 +24,16 @@
 
 h1{
     font-family: bold;
+    text-align: center;
+    /* padding-top: 1rem; */
+}
+
+hr{
+    border: none; 
+    border-top: 2px solid #515151;
+    width: 90%;
+    margin: 20px auto;
+
 }
 
 body{
@@ -47,7 +58,7 @@ body{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(../image/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.7)),url(../image/School_Full_cover_Photo.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -136,13 +147,178 @@ nav img{
     display:none;
 }
 
+/*------------------------------------------------------about section--------------------------------------------------------------*/
+
+
+.about-section {
+    padding-left: 0.5%;
+    padding-right: 4%;
+  }
+  
+.about-section h1 {
+    font-size: 2.1875rem;
+    /* font-weight: bold; */
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+.flex-container {
+    display: flex;
+    padding: 1.25rem;
+    width: 95%;
+    align-items: center;
+  }
+  
+  .about-info {
+    width: 50%;
+    margin: 1.25rem;
+  
+  }
+  
+  .about-info h2 {
+    font-size: 1.4rem;
+    margin: .625rem;
+  }
+  
+  .about-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+  }
+  
+  .about-info p:first-of-type {
+    margin-top: 0;
+  }
+  
+  .about-info p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .members {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    margin: .625rem;
+  }
+  
+  .members .principal-info {
+    margin-top: 1.25rem;
+    text-align: center;
+  }
+  
+  .members .principal-info h2 {
+    font-size: 1.125rem;
+    margin-bottom: .625rem;
+  }
+  
+  .members .principal-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    text-align: justify;
+  }
+  
+  .span-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin: 1.25rem;
+    text-align: center;
+  }
+  
+  .img-container {
+    width: 250px;
+    height: 250px;
+    margin: .625rem auto;
+
+    
+  }
+
+  
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .more-information{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 3%;
+    padding-top: 0;
+   
+  }
+  
+  .more-information p{
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+  }
+  
+  /*---------------------------------------------media queries--------for about section-------------------------------------------------------------*/
+  
+  @media (max-width: 1050px) {
+    .about-section h1{
+      font-size: 1.6rem;
+    }
+    .about-info h2{
+      font-size: 1.1rem;
+    }
+    .span-text{
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .about-section h1{
+      font-size: 1.5rem;
+    }
+  
+   .flex-container{
+    flex-direction: column;
+    padding-top: 0;
+   }
+   
+  .about-info {
+    width: 100%;
+  }
+  .members {
+    width: 100%;
+  }
+  .span-text{
+    font-size: 1rem;
+  }
+  
+  }
+  
+  @media (max-width: 450px) {
+    .about-section h1{
+      font-size: 1.4rem;
+    }
+  }
+  
+  
+  /*----------------------------------------------------end of about section-----------------------------------------------------------------------*/
+    
+
 /* Course */
 
  .course{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 20px;
 }
 h1{
     font-size: 36px;
@@ -156,17 +332,19 @@ p{
     padding: 10px;
 }
 .row{
-    margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:space-between;
 }
 .course-col{
-    flex-basis: 31%;
+    flex-basis: 32%;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom:5%;
     padding: 20px 12px;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
     transition: 0.5s;
 }
 h3{
@@ -187,6 +365,7 @@ h3{
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    overflow-x: scroll;
 }
 .campus-col{
     flex-basis: 32%;
@@ -233,39 +412,107 @@ h3{
     bottom: 49%;
 }
 
-/* Facilities */
+/* staffs */
 
-.facilities{
+.staffs{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
+    justify-content: space-between;
+    
 }
 
-.facilities-col{
-    flex-basis: 31%;
+.staffs-col{
+    flex-basis: 21%;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     text-align: left;
+    
 }
-.facilities-col img{
+.staffs-col img{
     width: 100%;
     border-radius: 10px;
     transition: 0.5s;
 }
-.facilities-col p{
+.staffs-col p{
     padding: 0%;
 }
 
-.facilities-col h3{
+.staffs-col h3{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
 }
 
-.facilities-col img:hover{
+.staffs-col img:hover{
     box-shadow: 3.5px 5px 15px 10px rgba(0, 0, 0, 0.308);
 }
+
+/*-------------------------gallery section------------------------------------*/
+
+.gallery {
+    margin: 1.25rem;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    margin: 1.25rem;
+    padding: .9375rem;
+    text-transform: uppercase;
+  }
+  
+  figure {
+    margin: 0;
+    position: relative;
+  }
+  
+  figcaption {
+    font-style: italic;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    line-height: 1.4;
+    position: absolute;
+    bottom: 6%;
+    left: 0;
+    padding: 0.7rem;
+    background: #24262ba8;
+    width: 93%;
+  }
+  
+  .grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    grid-gap: 1em;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding: 2em 1em;
+    background: white;
+    list-style: none;
+  }
+  
+  
+  @media all and (min-width: 740px) {
+    .grid {
+      grid-auto-flow: initial;
+      grid-template-columns: repeat(auto-fit, minmax(auto, 20em));
+      justify-content: center;
+    }
+  }
+  
+  .grid__figure {
+    display: grid;
+    grid-template-rows: 15em 1fr;
+    grid-gap: 1em;
+  }
+  
+  .grid__figure img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
 
 /* Call To Action */
 
@@ -295,24 +542,137 @@ h3{
     padding: 100px 0;
     box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.664);
 }
-.ctn{
-    
-}
 
 /* Footer */
 
-.footer{
-    width: 100%;
+/*------------------------------------------------footer design-----------------------------------------------------------------------------*/
+  
+.footer {
+    background-color: #24262b;
+    padding: 4.375rem 0;
+    padding-bottom: 0.4rem;
+  }
+  
+  
+  .footer-container {
+    padding: 1.875rem;
+    position: relative;
+  }
+  
+  .roww{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .footer-col {
+    width: 40%;
+    padding: 0 .75rem;
+  }
+  
+  .footer-col h4 {
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 2.1875rem;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.625rem;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 3.125rem;
+  }
+  
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: .625rem;
+  }
+  
+  .footer-col ul li a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: .5rem;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 .625rem .625rem 0;
     text-align: center;
-    padding: 30px 0;
-    margin-top: -50px;
-}
+    line-height: 2.5rem;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  .creator{
+    margin: 1rem;
+    padding: 1rem;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 0.2rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
 
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-} 
+  
+  /*------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*------------------------------------responsive media queries------for footer--------------------------------------------------------------*/
+  
+  @media(max-width: 740px) {
+    .footer {
+      margin-top: 2.5rem;
+    }
+  
+    .footer-col {
+      width: 50%;
+      margin-bottom: 1.875rem;
+    }
+  }
+  
+  @media(max-width: 574px) {
+    .footer-col {
+      width: 100%;
+    }
+    .creator {
+      font-size: 0.4rem;
+    }
+  }
+   
+  @media(max-width: 433px) {
+ 
+    .creator {
+      font-size: 0.38.5rem;
+    }
+  }
 
 /* Media query for responsive */
 
@@ -370,8 +730,8 @@ h3{
     .course-col:hover{
         box-shadow: 3px 3px 0.5px 0.5px rgba(0, 0, 0, 0.486);
     }
-        /* Facilities */
-    .facilities-col img:hover{
+        /* staffs */
+    .staffs-col img:hover{
         box-shadow:none;
     }
 
