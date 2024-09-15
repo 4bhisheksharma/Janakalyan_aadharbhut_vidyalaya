@@ -433,7 +433,7 @@ h3{
 .staffs-col img{
     width: 100%;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .staffs-col p{
     padding: 0%;
@@ -624,7 +624,7 @@ h3{
     line-height: 2.5rem;
     border-radius: 50%;
     color: #ffffff;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
   
   .footer-col .social-links a:hover {
@@ -706,7 +706,7 @@ h3{
         right: -200px;
         text-align: left;
         z-index: 2;
-        transition: 1s;
+        transition: 0.8s;
     }
     .icon{
         display: block;
